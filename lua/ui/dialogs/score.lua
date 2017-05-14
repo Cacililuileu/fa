@@ -455,7 +455,7 @@ function CreateSkirmishScreen(victory, showCampaign, operationVictoryTable)
     bg.continueBtn.OnClick = function(self, modifiers)
         hotstats.clean_view()
         ConExecute("ren_Oblivion false")
-        EscapeHandler.SafeQuit()
+        -- EscapeHandler.SafeQuit()
     end
     Tooltip.AddButtonTooltip(bg.continueBtn, 'esc_exit')
 
@@ -492,7 +492,7 @@ function CreateSkirmishScreen(victory, showCampaign, operationVictoryTable)
         bg.rehostBtn.OnClick = function(self, modifiers)
             ConExecute("ren_Oblivion false")
             GpgNetSend('Rehost')
-            EscapeHandler.SafeQuit()
+            -- EscapeHandler.SafeQuit()
         end
         Tooltip.AddButtonTooltip(bg.rehostBtn, 'esc_rehost')
     end
